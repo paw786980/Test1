@@ -1,11 +1,15 @@
-🧪 Prueba Técnica 1 (20 min): Backend Python + Análisis + Docker
-📋 Descripción actualizada:
-Desarrolla un pequeño backend con FastAPI o Flask, que lea un archivo dataset de clientes y exponga dos endpoints. Además, empaqueta la aplicación en un contenedor Docker listo para correr.
+🧪 Prueba Técnica 1:
 
-✅ Requisitos:
-Endpoint /clientes: retorna todos los registros.
+📋 Descripción
+Desarrolla un pequeño servicio backend usando FastAPI o Flask que realice lo siguiente:
 
-Endpoint /analisis: devuelve:
+Lea un archivo CSV de dataset de clientes al iniciar el servidor.
+
+Exponga los siguientes endpoints REST:
+
+GET /clientes: retorna todos los registros del CSV.
+
+GET /analisis: retorna los siguientes análisis calculados usando Pandas:
 
 Número total de registros.
 
@@ -13,14 +17,21 @@ Promedio de edad.
 
 Total de compras por país.
 
-Dockerfile funcional para correr el backend con docker run.
+Promedio de compras por rango de edad:
 
-Opcional: usar pandas para análisis.
+18-25
 
-📂 Dataset de ejemplo:
+26-35
 
-nombre,edad,pais,compras
-Juan,32,México,1200
-Ana,27,Colombia,1500
-Luis,45,México,950
-Laura,30,Chile,1750
+36-50
+
+51+
+
+Empaqueta toda la aplicación en un contenedor Docker listo para correr con docker run.
+
+✅ Requisitos funcionales
+Usar la librería Pandas para el análisis de datos.
+
+Exponer los datos como respuesta en formato JSON.
+
+Incluir un Dockerfile funcional.
