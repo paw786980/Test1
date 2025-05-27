@@ -30,6 +30,7 @@ Promedio de compras por rango de edad:
 Empaqueta toda la aplicación en un contenedor Docker listo para correr con docker run.
 
 ✅ Requisitos funcionales
+
 Usar la librería Pandas para el análisis de datos.
 
 Exponer los datos como respuesta en formato JSON.
