@@ -7,32 +7,17 @@ Lea un archivo CSV de dataset de clientes al iniciar el servidor.
 
 Exponga los siguientes endpoints REST:
 
-GET /clientes: retorna todos los registros del CSV.
+-GET /clientes: retorna todos los registros del CSV.
 
-GET /analisis: retorna los siguientes análisis calculados usando Pandas:
+-GET /analisis: retorna los siguientes análisis calculados usando Pandas:
 
-Número total de registros.
+-GET /clientes?pais=Nombre: filtra por país.
 
-Promedio de edad.
+-GET /clientes/top: muestra el top 3 de clientes con más compras.
 
-Total de compras por país.
-
-Promedio de compras por rango de edad:
-
-18-25
-
-26-35
-
-36-50
-
-51+
-
-Empaqueta toda la aplicación en un contenedor Docker listo para correr con docker run.
 
 ✅ Requisitos funcionales
 
 Usar la librería Pandas para el análisis de datos.
 
 Exponer los datos como respuesta en formato JSON.
-
-Incluir un Dockerfile funcional.
